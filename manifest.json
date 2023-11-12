@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "SUAI drag-and-drop",
+    "version": "1.0",
+  
+    "description": "the extension adds drag and drop when loading the report",
+  
+    "icons": {
+      "16": "favicon.ico"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["https://pro.guap.ru/inside/student/reports/*/create"],
+        "js": ["index.js"]
+      }
+    ]
+  }
+  
