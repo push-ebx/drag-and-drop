@@ -1,7 +1,5 @@
 const drop_area = document.getElementsByClassName('card')[0];
-const save_button = document.getElementsByClassName('btn-success')[0];
 const load_button = document.getElementsByClassName('btn-info')[0];
-save_button.style.display = 'none';
 
 ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
   drop_area.addEventListener(eventName, (e) => {
@@ -12,7 +10,6 @@ save_button.style.display = 'none';
 
 drop_area.addEventListener('drop', (e) => {
   document.getElementById('file').files = e.dataTransfer.files;
-  save_button.style.display = 'block';
   load_button.text = e.dataTransfer.files[0].name;
 });
 
