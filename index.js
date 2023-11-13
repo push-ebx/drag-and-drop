@@ -24,3 +24,5 @@ drop_area.addEventListener('drop', (e) => {
     drop_area.style.cssText = 'box-shadow: var(--suai-shadow) !important'
   }, false)
 });
+
+// window.location.replace("https://pro.guap.ru/inside/student/tasks/?subject=0&type=0&text=&perPage=100&sort=d.subg&direction=asc&page=1");
